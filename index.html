@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Palindrome Checker</title>
+<lang='en'>
+<meta charset="utf-8">
+<link href="CSS/style.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width">  
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Staatliches&display=swap" rel="stylesheet">
+<h1>Palindrome Checker</h1>
+<form id="palindrome-form" onSubmit="return false">
+	<label for="palindrome-input" id="palindrome-label"></label>
+	<div id="input-elements-container">
+	<input id="palindrome-input" class="palindrome-interactive" type="text" placeholder="possible palindrome">
+	<button id="palindrome-button" class="palindrome-interactive" type="button" onclick="palindrome()">check!</button>
+	</div>
+</form>
+<div id="outcome-container">
+
+<div id="input-container" class="outcome-column">
+<h2 class="outcome-text">your input</h2>
+<p id="palindrome-your-input">palindrome</p>
+</div>
+<div id="reversed-container" class="outcome-column">
+<h2 class="outcome-text">reversed</h2>
+<p id="palindrome-reversed">emordnilap</p>
+</div>
+<div id="result-container" class="outcome-column">
+<h2 class="outcome-text" >palindrome?</h2>
+<p id="palindrome-result">No :-(</p>
+</div>
+
+</div>
+
+<script type ="text/javascript" src="JS/script.js"></script>
+</body>
+</html>
