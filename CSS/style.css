@@ -1,0 +1,109 @@
+body{
+	background-color: #D3EBE0;
+	width: 90%;
+	margin: auto;
+	font-family: 'Source Sans Pro', sans-serif;
+	--border-color: hsl(207, 20%, 60%);
+}
+/* general fonts*/
+h1, h2, p {
+	color: hsl(207, 20%, 30%);
+	text-align: center;
+}
+h1 {
+	font-family: Staatliches, sans-serif;
+	font-size: 10em;
+}
+
+.outcome-text {
+	text-decoration-line: underline;
+	margin-top: 10px;
+	font-size: 2em;
+}
+
+p {
+	font-size: 2em;
+}
+
+/*input elements*/
+#input-elements-container {
+	display: flex;
+	width: 100%;
+	height: 70px;
+}
+
+.palindrome-interactive {
+	border: solid 2px var(--border-color);
+	margin-bottom: 10px;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#palindrome-input {
+	flex-basis: 80%;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: hsl(207, 20%, 30%);
+	background-color: rgba(245, 148, 174, 0.5);
+	font-size: 2em;
+}
+
+#palindrome-input:focus {
+	outline-width: 0;
+	border-width: 3px;
+	background-color: rgba(245, 148, 174, 0.6);
+}
+
+#palindrome-button {
+	flex-basis: 20%;
+	font-family: Staatliches, sans-serif;
+	font-size: 2em;
+	color: hsl(207, 20%, 30%);
+	background-color: rgba(245, 148, 174, 0.8);
+	margin-left: 10px;
+}
+
+#palindrome-button:hover {
+	cursor: pointer;
+	background-color: rgba(245, 148, 174, 1);
+	border-width: 3px;
+}
+
+/*outcome table */
+#outcome-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.outcome-column {
+	width: 100%;
+	border: solid var(--border-color);
+	border-width: 2px 2px 2px 0px;
+	padding: 10px;
+	background-color: rgba(143, 238, 194, 0.5);
+}
+
+#input-container {
+	border-width: 2px;
+}
+
+@media (max-width: 785px) {
+	h1{
+		font-size: 5em;
+	}
+	.outcome-text, p, #palindrome-button, #palindrome-input {
+		font-size: 1em;
+	}
+}
+
+@media (max-width: 399px){
+	h1{
+		font-size: 2em;
+	}
+	.outcome-text, p, #palindrome-button, #palindrome-input {
+		font-size: 0.8em;
+	}
+}
+
+	
